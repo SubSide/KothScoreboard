@@ -1,0 +1,21 @@
+characterlimit: 16
+charactertitlelimit: 16
+use-old-scoreboard: false
+default:
+  title: "&a&l%koth%"
+  contents:
+    - "&6&lTime Left:"
+    - "&9%ml%:%sl%"
+    - " "
+    - "&6&lCoords:"
+    - "&cX: &e%x%"
+    - "&cZ: &e%z%"
+conquest:
+  title: "&a&l%koth%"
+  contents:
+    - "&6&lTime Left:"
+    - "&9%ml%:%sl%"
+    - " "
+    - "&6&lCoords:"
+    - "&cX: &e%x%"
+    - "&cZ: &e%z%"

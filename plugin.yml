@@ -1,0 +1,5 @@
+name: KoTH-Scoreboard
+main: subside.extensions.koth.scoreboard.KothScoreboard
+version: 1.0.0
+author: SubSide
+depend: [KoTH]
