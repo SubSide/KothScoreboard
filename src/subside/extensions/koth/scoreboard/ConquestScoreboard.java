@@ -8,8 +8,8 @@ import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
 import lombok.Getter;
-import subside.plugins.koth.adapter.KothConquest;
-import subside.plugins.koth.adapter.RunningKoth;
+import subside.plugins.koth.gamemodes.KothConquest;
+import subside.plugins.koth.gamemodes.RunningKoth;
 import subside.plugins.koth.utils.MessageBuilder;
 
 public class ConquestScoreboard extends AbstractScoreboard {

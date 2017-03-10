@@ -3,7 +3,7 @@ package subside.extensions.koth.scoreboard;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
-import subside.plugins.koth.adapter.RunningKoth;
+import subside.plugins.koth.gamemodes.RunningKoth;
 
 public abstract class AbstractScoreboard implements Listener {
     public abstract void updateScoreboard();

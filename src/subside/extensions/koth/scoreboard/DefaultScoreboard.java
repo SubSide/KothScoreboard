@@ -11,7 +11,7 @@ import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
-import subside.plugins.koth.adapter.RunningKoth;
+import subside.plugins.koth.gamemodes.RunningKoth;
 import subside.plugins.koth.utils.MessageBuilder;
 
 public class DefaultScoreboard extends AbstractScoreboard {

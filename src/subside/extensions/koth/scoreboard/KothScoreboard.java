@@ -47,7 +47,7 @@ public class KothScoreboard extends JavaPlugin implements Listener {
     
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     public void KothInitialize(final KothInitializeEvent event){
-        Bukkit.getScheduler().runTask(KothPlugin.getPlugin(), new Runnable(){
+        Bukkit.getScheduler().runTask(this, new Runnable(){
             @Override
             public void run() {
                 ScoreboardManager.getInstance().loadScoreboard("default", event.getRunningKoth());

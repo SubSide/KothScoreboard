@@ -12,7 +12,7 @@ import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 import lombok.Getter;
-import subside.plugins.koth.adapter.RunningKoth;
+import subside.plugins.koth.gamemodes.RunningKoth;
 
 public class ScoreboardManager implements Listener {
     private static @Getter ScoreboardManager instance;
