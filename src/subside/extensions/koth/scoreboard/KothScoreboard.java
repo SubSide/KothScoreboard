@@ -6,7 +6,6 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import subside.plugins.koth.KothPlugin;
 import subside.plugins.koth.events.KothEndEvent;
 import subside.plugins.koth.events.KothInitializeEvent;
 import subside.plugins.koth.events.KothPostUpdateEvent;
