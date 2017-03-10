@@ -46,6 +46,7 @@ public class OldScoreboard extends AbstractScoreboard {
     
     @Override
     public void destroy() {
+        this.sbObject.clearScoreboard();
     }
 
 
@@ -75,7 +76,7 @@ public class OldScoreboard extends AbstractScoreboard {
         
 
         public void setTitle(String ttl) {
-            if (this.title != null) if (this.title.equals(ttl)) return;
+            if (this.title != null && this.title.equals(ttl)) return;
             ttl = chopTitle(ttl);
             
             this.title = ttl;
@@ -87,6 +88,17 @@ public class OldScoreboard extends AbstractScoreboard {
             scr = chop(scr);
             teams[x].setPrefix(scr);
 
+        }
+        
+        // Fix by ivo120, thnx <3
+        public void clearScoreboard() {
+            for (Team team : this.teams) {
+                for (String entry : team.getEntries()) {
+                    team.removeEntry(entry);
+                    this.scoreboard.resetScores(entry);
+                }
+                team.unregister();
+            }
         }
         
         public void removePlayer(Player player){
