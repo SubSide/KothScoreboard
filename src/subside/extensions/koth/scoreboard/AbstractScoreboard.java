@@ -13,12 +13,12 @@ public abstract class AbstractScoreboard implements Listener {
     
     public String chop(String str){
         int maxL = ConfigHandler.getInstance().getCharacterLimit();
-        int maxLength = (str.length() < maxL)?str.length():maxL;
+        int maxLength = (str.length() <= maxL) ? str.length() : maxL;
         return str.substring(0, maxLength);
     }
     public String chopTitle(String str){
         int maxL = ConfigHandler.getInstance().getCharacterTitleLimit();
-        int maxLength = (str.length() < maxL)?str.length():maxL;
+        int maxLength = (str.length() <= maxL)?str.length():maxL;
         return str.substring(0, maxLength);
     }
 }
