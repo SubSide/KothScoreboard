@@ -16,7 +16,7 @@ public class ConfigHandler {
         instance = this;
         cfg = plugin.getConfig();
         characterLimit = cfg.getInt("characterlimit");
-        characterLimit = cfg.getInt("charactertitlelimit");
+        characterTitleLimit = cfg.getInt("charactertitlelimit");
         useOldScoreboard = cfg.getBoolean("use-old-scoreboard");
     }
 }
